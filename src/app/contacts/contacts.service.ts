@@ -20,5 +20,10 @@ export class ContactsService {
       .map( res => res.json())
   }
 
+  getHobbies(id: number){
+    return this.http.get('http://localhost:3000/hobbies/' + id)
+      //.do(console.log)
+      .map( res => res.json().hobbies);
+  }
 }
 

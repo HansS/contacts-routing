@@ -15,16 +15,28 @@ import { ContactsService } from './../contacts.service';
 export class ContactDetailsComponent implements OnInit {
 
   //private id: number;
-  @Input() contact: Contact;
+  contact: Contact;
+  hobbies: string[]; 
   constructor(private service: ContactsService, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    // get contact data
      this.route.params
             .map(params  =>  params['id'])
             .subscribe((id)  =>  {
                 this.service
                     .getContact(id)
                     .subscribe(contact  =>  this.contact  =  contact);
+
+      });
+
+      // get hobbies
+           this.route.params
+            .map(params  =>  params['id'])
+            .subscribe((id)  =>  {
+                this.service
+                    .getHobbies(id)
+                    .subscribe(hs  =>  this.hobbies  = hs);
 
       });
   }

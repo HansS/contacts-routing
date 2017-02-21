@@ -1,9 +1,98 @@
 {
-    "contacts": [
-        {"id":1, "name":"Hans"},
-        {"id":2, "name":"Karl"},
-        {"id":3, "name":"Fritz"},
-        {"id":4, "name":"Kurt"},
-        {"id":5, "name":"Heinz"}
-    ]
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Hans",
+      "age": 42,
+      "hobbies": [
+        "skiing",
+        "dancing",
+        "simming"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Karl",
+      "age": 32,
+      "hobbies": [
+        "bowling",
+        "reading",
+        "cooking"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fritz",
+      "age": 22,
+      "hobbies": [
+        "reading",
+        " tv wachting",
+        "snowboarding"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Kurt",
+      "age": 52,
+      "hobbies": [
+        "scuba diving, gardening, constructing"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Heinz",
+      "age": 62,
+      "hobbies": [
+        "eating",
+        "sleeping",
+        "sex"
+      ]
+    },
+    {
+      "name": "John Smith",
+      "age": "77",
+      "hobbies": "[fishing,surfing]",
+      "id": 6
+    }
+  ],
+  "hobbies": [
+    {
+      "id": 1,
+      "hobbies": [
+        "skiing",
+        "dancing",
+        "simming"
+      ]
+    },
+    {
+      "id": 2,
+      "hobbies": [
+        "bowling",
+        "reading",
+        "cooking"
+      ]
+    },
+    {
+      "id": 3,
+      "hobbies": [
+        "reading",
+        " tv wachting",
+        "snowboarding"
+      ]
+    },
+    {
+      "id": 4,
+      "hobbies": [
+        "scuba diving, gardening, constructing"
+      ]
+    },
+    {
+      "id": 5,
+      "hobbies": [
+        "eating",
+        "sleeping",
+        "sex"
+      ]
+    }
+  ]
 }

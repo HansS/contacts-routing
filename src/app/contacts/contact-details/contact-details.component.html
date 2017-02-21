@@ -1,4 +1,9 @@
-<p>
-  contact-details works!
-  {{contact?.name}}
-</p>
+<div>{{contact?.id}}</div>
+<div>{{contact?.name}}</div>
+<div>{{contact?.age}}</div>
+
+<ul>
+  <li *ngFor="let hobby of hobbies">
+    {{hobby}}
+  </li>
+</ul>

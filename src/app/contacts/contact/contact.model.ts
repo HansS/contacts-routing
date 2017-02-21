@@ -1,3 +1,6 @@
 export class Contact {
-    constructor(public id: number, public name:string){}
+    constructor(public id: number, 
+                public name:string,
+                public age:number,
+                public hobbies:string[]){}
 }

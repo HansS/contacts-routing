@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy,Input } from '@angular/core';
+
+import { Contact } from './../contact/contact.model';
+
 
 @Component({
   selector: 'contact-form',
@@ -7,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
+  @Input() contact: Contact;
   constructor() { }
 
   ngOnInit() {
